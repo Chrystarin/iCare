@@ -1,23 +1,41 @@
 $(document).ready(function(){
-
+    // Scroll animation for the head nav
     $(window).on("scroll", function(){tr();})
-    
     function tr(){
       var scroll = $(window).scrollTop();
       
       if(scroll > 5){
-        console.log("greater");
         $("header").addClass('animate');
         $("header div").css("border-color","transparent");
       }else{
         $("header").removeClass('animate');
         $("header > div").css("border-color","white");
-        console.log("lower");
-      }
-      // console.log(scroll);
-    }
-    
 
+      }
+    }
+    setTimeout(function(){
+      Transition();
+    },5000);
+    function Transition(){
+      $("#Title,#Author,#Date,#Content").addClass("Transition"); 
+      setTimeout(function(){
+        // insert of new value
+        $("#Title").html(title[0]);
+        $("#Author").html(author[0]);
+        $("#Date").html(date[0]);
+        $("#Content").html(content[0]);
+        setTimeout(function(){
+          $("#Title,#Author,#Date,#Content").removeClass();
+          
+          // Time of the animation
+        },1000)
+        // time of the animation * 0.4
+      },400);
+      setTimeout(function(){
+        Transition();
+      },5000);
+    }
+      
     
         
     // $("header")

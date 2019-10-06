@@ -109,6 +109,7 @@ header div > ul > li a {
 	color: antiquewhite;
 	font-size: .9em;
 	text-align: justify;
+	clear: both;
 }
 #head > div > button {
 	background: #23bb7e;
@@ -120,43 +121,30 @@ header div > ul > li a {
 	color: aliceblue;
 	margin-top: 20px;
 }
-
+#head > div > p > span:nth-child(1){
+	float: left;
+	margin-bottom: 10px;
+}
 #head > div > p > span:nth-child(2){
 	float: right;
 }
-/* class to hide element */
 
-.hide{
-	animation: hide 1s forwards;
-}
 /* Animation for transition of blogs in head */
-/* animation to hide */
-@keyframes hide{
+
+.Transition{
+	animation: try 1s forwards;
+}
+@keyframes try{
 	0%{
 		transform: translateX(0px);
 		opacity: 1;
 		
 	}
-	75%{
-		opacity: .1;
-	}
-	100%{
+	40%{
 		transform: translateX(-10px);
 		opacity: 0;
 	}
-
-}
-/* Class to show elements */
-/* .ShowTitle {
-	animation: ShowT 1s forwards;
-}
-.ShowContent {
-	
-	animation: .5s ShowC 1s forwards
-} */
-/* Animation to fade in */
-@keyframes ShowT{
-	0%{
+	60%{
 		transform: translateY(15px);
 		opacity: 0;
 	}
@@ -165,18 +153,6 @@ header div > ul > li a {
 		opacity: 1;
 	}
 }
-@keyframes ShowC{
-	0%{
-		transform: translateX(15px);
-		opacity: 0;
-	}
-	100%{
-		transform: translateX(0px);
-		opacity: 1;
-	}
-}
-
- 
 /* SECTION 1 */
 #S1 {
 	background: red;
