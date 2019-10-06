@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    $(window).on("scroll", function(){tr();})
-    
+    $(window).on("scroll", function(){tr();});
+  // FUNCTION FOR ANIMATION HEADER SCROLLING 
     function tr(){
       var scroll = $(window).scrollTop();
       
@@ -14,8 +14,9 @@ $(document).ready(function(){
         $("header > div").css("border-color","white");
         console.log("lower");
       }
-      // console.log(scroll);
     }
+
+    // function for  the head blog animation
     
 
     
