@@ -13,11 +13,15 @@ $(document).ready(function(){
 
       }
     }
+    
+    // Animation for the header
     setTimeout(function(){
       Transition();
-    },5000);
+
+
+    },10000);
     function Transition(){
-      $("#Title,#Author,#Date,#Content").addClass("Transition"); 
+      $("#Title,#Author,#Date,#Content").addClass("Change"); 
       setTimeout(function(){
         // insert of new value
         $("#Title").html(title[0]);
@@ -33,7 +37,7 @@ $(document).ready(function(){
       },400);
       setTimeout(function(){
         Transition();
-      },5000);
+      },10000);
     }
       
     

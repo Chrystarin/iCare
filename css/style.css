@@ -124,17 +124,37 @@ header div > ul > li a {
 #head > div > p > span:nth-child(1){
 	float: left;
 	margin-bottom: 10px;
+	clear: both;
 }
 #head > div > p > span:nth-child(2){
 	float: right;
 }
+#hold{
+	background: red;
+	width: 0%;
+	height: 8px;
+	margin-bottom: 10px;	
+	animation: timer 10s infinite ease-in;
+}
 
+@keyframes timer{
+	5%{
+		width: 0%;		
+	}
+	99%{
+		width: 100%;
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
 /* Animation for transition of blogs in head */
 
-.Transition{
-	animation: try 1s forwards;
+.Change{
+	animation:  Change 1s forwards;
 }
-@keyframes try{
+@keyframes Change{
 	0%{
 		transform: translateX(0px);
 		opacity: 1;
@@ -156,7 +176,7 @@ header div > ul > li a {
 /* SECTION 1 */
 #S1 {
 	background: red;
-	padding: 20px 0;
+	padding: 20px 0 250px;
 }
 #S1 h1{
 	text-align: center;
@@ -171,19 +191,34 @@ header div > ul > li a {
 }
 #S1 #wrapper div {
 	background:blue;
-	height: 200px;
+	padding: 1em;
+	text-align: center;
+}
+#wrapper div img {
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+	border-radius: 80%;
+	background: red;
+	
 }
 
 
 /* SECTION 2 */
 #S2{
-	background: blue;
-	z-index: 2;
+	background: url(../image/S3.png)no-repeat;
+	position: relative;
+	background-size: cover;
+	z-index: 4;
 	height: 100vh;
+	margin-top: -150px;
 }
+
+
 /* SECTION 3 */
 #S3{
 	background: green;
+	margin-top: -100px;
 	z-index: 1;
 	height: 100vh;
 }
