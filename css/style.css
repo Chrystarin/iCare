@@ -95,15 +95,14 @@ header div > ul > li a {
 	text-align: justify;
 	clear: both;
 }
-#head > div > button {
+.Discover {
 	background: #23bb7e;
 	border: none;
-	border-radius: 20px;
 	outline: none;
 	cursor: pointer;
 	padding: 1em;
 	color: aliceblue;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 #head > div > p > span:nth-child(1) {
 	float: left;
@@ -119,7 +118,9 @@ header div > ul > li a {
 	width: 0%;
 	height: 8px;
 	margin-bottom: 10px;	
-	animation: timer 10.02s infinite ease-out;
+}
+.ani{
+	animation: timer 10.02s forwards ease-out;
 }
 @keyframes timer {
 	5%{
@@ -174,34 +175,91 @@ header div > ul > li a {
 }
 /* SECTION 1 */
 #S1 {
-	padding: 20px 0 250px;
+	width: 100%;
+	padding-bottom: 200px;
+
 }
-#S1 h1{
+#S1Responsiveness{
+	max-width: 1600px;
+	margin: auto;
+	height: 100%;
+	padding: 1em;
+}
+
+#Ways1{
+	width: 100%;
+	height: 600px;
+}
+.Ways-holder{
+	width: 55%;
+	height: 100%;
+	background: pink;
+	position: relative;
+	background: blue;
+}
+.ways-image-holder{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.ways-image-holder::after{
+	content: "";
+	display: block;
+	background: rgba(51, 51, 51, 0.527);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .3s ease-in;
+}
+.Ways-holder:hover .ways-image-holder::after{
+	opacity: 1;
+}
+
+.ways-image-holder img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	transition: height .3s ease-in, width .3s ease-in;
+}
+.Ways-holder:hover .ways-image-holder img{
+	width: 110%;
+	height: 110%;
+}
+
+.ways-content-holder{
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	transform: translate(-10%,-50%);
+	width: 100%;
+	max-height: 90%;
+	background: olive;
+	border-radius: 5px;
+	padding: 4em 1em; 
+	box-sizing: border-box;
 	text-align: center;
-	
 }
-#S1 #wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 15px 20px;
-	width: 60%;
-	margin: 20px auto;
+.ways-content-holder h1{
+	color: white;
+	font-size: 2em;
 }
-#S1 #wrapper div {
-	background:blue;
-	padding: 1.9em 1.4em;
-	text-align: center;
+.ways-content-holder p{
+	color: rgb(199, 199, 199);
+	width: 80%;
+	margin: 20px auto 0;
 }
-#wrapper div img {
-	display: inline-block;
-	width: 30%;
-	height: 30%;
-	border-radius: 80%;
-	background: red;
-}
-#S1 #wrapper div h1 {
-	margin: 15px 0 20px;
-}
+
+
+
+
+
 /* SECTION 2 */
 #S2 {
 	background: url(../image/S3.png)no-repeat;
@@ -213,42 +271,50 @@ header div > ul > li a {
 	text-align: center;
 	position: relative;
 }
-#S2 > img {
+#S2 img:nth-child(1) {
 	width: 30%;
-	display: inline-box;
 	margin-bottom: 50px;
 }
-#S2 > div > div {
-	position: relative;
+#S2 img:nth-child(2) {
+	position: absolute;
+	left: 0;
+	height: 80%;
+}
+#S2 img:nth-child(3) {
+	position: absolute;
+	right: 0;
+	height: 80%;
+}
+#S2 > div {
 	overflow: hidden;
 	border-radius: 5px;
 	padding: 1em;
-
 	min-height: 300px;
 	background: rgb(219, 216, 216);
+	position: relative;
+	width: 50%;
 	margin: auto;
 }
-#S2 > div> div::after {
-	content: "";
-	display: block;
+
+#S2 > div > div {
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;;
 	height: 10px;
 	background: #00BCD4;
-	animation: timer 10s infinite ease-in-out;
 }
-#S2 > div> div > h1 {
+.Startani {
+	animation: timer 20s forwards ease-in;
+}
+#S2 > div > h1 {
 	text-align: left;
 	color: #00BCD4;
 	font-size: 1.8em;
 }
 #FactsContent {
-	position: absolute;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%, -65%);
+	width: 80%;
+	margin: 20px auto 40px;
 	font-size: 1.2em;
 	color: rgb(46, 46, 46);
 }
@@ -259,59 +325,112 @@ header div > ul > li a {
 @keyframes FactsChange {
 	0%{
 		color: red;
-		left: 50%;
+		transform: translateX(0);
 		opacity: 1;
 		
 	}
 	40%{
 		color: black;
 		opacity: 0;
-		left: 30%;
+		transform: translateX(-30px);
 		
 	}	
 	60%{
-		left: 60%;
+		transform: translateX(30px);
 	}
 	100%{
-		left: 50%;
+		transform: translateX(0);
 		opacity: 1;
 	}
 }
-#S2 > div {
-	position: relative;
-	margin: auto;
-	width: 60%;
-}
-#S2 > div > img{
-	position: absolute;
-	width: 19%;
-	bottom: -10%;
-	left: -11%;
-	z-index: 5;
-	
-}
 /* SECTION 3 */
 #S3 {
-	background: green;
 	margin-top: -100px;
 	z-index: 1;
 	min-height: 100vh;
+	padding-top: 100px;
 }
 #S3 > div{
-	background: red;
-	width: 100%;
-	height: 100vh;
+	background-size: cover;
+	max-width: 1600px;
 	position: relative;
+	margin: auto;
 }
 #S3 #Timer{
 	width: 73%;
-	height: 60%;
-	background: blue;
+	height: 55%;
+	background: rgba(48, 48, 48, 0.9);
+	border-radius: 10px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	padding: 90px 1em 1em;
 }
+
+#S3 div > img {
+	width: 100%;
+}
+#Timer h1{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+#Counter-holder{
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 5px;
+	padding: 1em .5em;
+	border: 5px white solid;
+	margin: 70px auto 0;
+	overflow: hidden;
+}
+#Counter-holder .Counter{
+	color: white;
+	text-align: center;
+	font-size: 60px;
+}
+#Counter-holder .Counter span{
+	position: relative;
+}
+.Counterani{
+	animation: Counterani 1s infinite ease-in-out;
+}
+
+@keyframes Counterani{
+	0%{
+		top: 0;
+		opacity: 1;
+	}
+	40%{
+		top: -20px;
+		opacity: 0;
+	}
+	60%{
+		top: 20px;
+		opacity: 0;
+	}
+	100%{
+		top: 0;
+		opacity: 1;
+	}
+}
+/* Section 4 */
+#S4{
+	background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer {
