@@ -1,13 +1,14 @@
 #S1,#S2,#S3,#head{
-    display: none;
+    /* display: none; */
 }
-#Article,#Article2,#Article3,#Article4,#Article5{
+#Article1,#Article2,#Article3,#Article4,#Article5{
     display: none;
 }
 #Blog{
     padding: 80px 1em 40px;
     box-sizing: border-box;
     background: #bbb5b5;
+    display: none;
 }
 .Article-Responsiveness{
     box-sizing: border-box;

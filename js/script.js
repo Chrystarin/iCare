@@ -98,15 +98,32 @@ $(document).ready(function(){
       $("#FactsContent").html(facts[x]);
     } 
 
+    $("#BLOG").on("click",function(){
+      $("#Blog,#Article1,#Article2,#Article3,#Article4,#Article5").fadeOut();
+      $("#S1,#S2,#S3,#S4,#head").fadeIn();
+    });
 
-    
     // Function for the discover button
     $(".Discover").on("click",function(){
-      var article = $(this).attr("data-Location");
-      $("#S1,#S2,#S3,#S4,#head").fadeOut();
-      $("#"+ article).fadeIn();
-
+      swap($(this).attr("data-Location"));
     });
+    $(".blog-holder").on("click",function(){
+      swap($(this).attr("data-Location"));
+    });
+
+    function swap(article){
+      $("#S1,#S2,#S3,#S4,#head").fadeOut();
+      $("#Blog,#Article1,#Article2,#Article3,#Article4,#Article5").fadeOut();
+      $("#Blog,#S4,#"+ article).fadeIn();
+      $(window.opera ? 'html' : 'html, body').animate({
+        scrollTop: 0
+        }, 'slow'); $(window.opera ? 'html' : 'html, body').animate({
+        scrollTop: 0
+        }, 'slow');
+    }
+
+    
+
     // counter($("#try"));
 
     // function counter(x){
