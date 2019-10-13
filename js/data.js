@@ -16,11 +16,11 @@ function insert(Title, Author, Date, Content,Backgound,ID){
 
 // Example of data insertion
 var Blog1 = {
-    "Title": "How I love my wife",
-    "Author": "Harold James Castillo",
-    "Date": "06/01/19",
-    "Content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, alias?",
-    "BG" : "red",
+    "Title": "The Hourglass of Extinction ",
+    "Author": "Dianne Chrystalin M. Brandez",
+    "Date": "10/05/19",
+    "Content": "For thousands of years all kinds of species have walked the face of this earth. Out of all the species that has lived and strived on earth since life began, around 99% has already gone extinct. As of today, earth has gone through five major extinctions, and based on studies and research, we are currently living through the sixth. What makes it worse is that our current rate of extinction is brought about by our own human hands. Based on research, this current extinction that we are facing is much worse than all previous ones due to the much faster rate of species decline.",
+    "BG" : "url(\"image/forest.jpg\")",
     "ID" : "Article1"
 };
 insert(Blog1["Title"],Blog1["Author"],Blog1["Date"],Blog1["Content"],Blog1["BG"],Blog1["ID"]);

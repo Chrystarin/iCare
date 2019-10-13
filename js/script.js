@@ -71,7 +71,7 @@ $(document).ready(function(){
       $("#Author").html(author[x]);
       $("#Date").html(date[x]);
       $("#Content").html(content[x]);
-      $("#head").css("background",BG[x]);
+      $("#head").css({"background": BG[x] +" no-repeat","background-size":"cover"});
       $("#Discover-Head").attr("data-Location", id[x])
     } 
     var c = 0;

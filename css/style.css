@@ -72,7 +72,7 @@ header div > ul > li a {
 	color: white;
 }
 #head {
-	background: #00062a;
+	background-size: cover;
 	width: 100%;
 	height: 100vh;
 }
@@ -189,7 +189,6 @@ header div > ul > li a {
 /* SECTION 1 */
 #S1 {
 	width: 100%;
-	padding-bottom: 200px;
 }
 #S1Responsiveness {
 	max-width: 1600px;
@@ -237,7 +236,7 @@ header div > ul > li a {
 	
 	width: 100%;
 	max-height: 90%;
-	background: olive;
+	background: #389583;
 	border-radius: 5px;
 	padding: 4em 1em; 
 	box-sizing: border-box;
@@ -254,7 +253,7 @@ header div > ul > li a {
 	font-size: 2em;
 }
 .ways-content-holder p{
-	color: rgb(199, 199, 199);
+	color: rgb(240, 255, 231);
 	width: 80%;
 	margin: 20px auto 0;
 }
@@ -353,11 +352,10 @@ header div > ul > li a {
 }
 /* SECTION 3 */
 #S3 {
-	margin-top: -100px;
 	z-index: 1;
 	min-height: 100vh;
-	padding-top: 100px;
-	background: #00062a;
+	padding-bottom: 120px;
+	background: #05396b;
 }
 #S3 > div{
 	background-size: cover;
@@ -473,7 +471,7 @@ header div > ul > li a {
 	column-gap: 5px;
 }
 .blog-Date {
-	background: green;
+	background: #389583;
 	text-align: center;
 	font-size: 16px;
 	box-sizing: border-box;
@@ -494,9 +492,15 @@ header div > ul > li a {
 .blog-Info {
 	padding: .5em;
 	border-bottom-right-radius: 10px;
-	background: red;
+	background: #05396b;
 }
-
+.blog-Info h3{
+	color: #edf5e0;
+}
+.blog-Info p{
+	color: #8de4af;
+	font-size: .9em;
+}
 
 
 

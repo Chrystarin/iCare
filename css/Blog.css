@@ -7,7 +7,7 @@
 #Blog{
     padding: 80px 1em 40px;
     box-sizing: border-box;
-    background: #bbb5b5;
+    background: #05396b;
     display: none;
 }
 .Article-Responsiveness{
@@ -28,7 +28,7 @@
     margin-top: 20px;
 }
 .Article-holder{
-    background: #ffffff;
+    background: #389583;
     padding: 1em;
 }
 .Article-info img{
@@ -40,12 +40,19 @@
     color: rgb(110, 110, 110);
     font-size: 1em;
 }
+.Article-holder p{
+    margin-top: 40px;
+}
+.Article-holder p::first-letter{
+    margin-left: 30px;
+   
+}
 .Article-info {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .Article-holder > img{
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0 0;
     border-radius: 5px;
 }
 .Article-holder2 img{
