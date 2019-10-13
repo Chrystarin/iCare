@@ -134,44 +134,10 @@ $(document).ready(function(){
         scrollTop: 0
         }, 'slow'); 
     }
-
+    setTimeout(function(){
+      $("#Loading").fadeOut();
+      $("#iCare-Content").fadeIn();
+    },5000)
     
 
-    // counter($("#try"));
-
-    // function counter(x){
-    //   Num = x.html();
-    //   if(Num>0){
-    //     var c = 0;
-    //     x.html(c);
-    //     S();
-    //     function S(){
-    //       if(c < Num){
-    //        x.addClass("Conterani");
-    //        setTimeout(function(){
-    //         x.html(c);
-    //         c++;
-    //        },400);
-    //        x.on("animationend",function(){
-    //         x.removeClass();
-    //        });
-    //       }else{
-
-    //       }
-        
-    //     }
-
-
-    //     // for(var c = 0; c <= Num; c++ ){
-    //     //   x.addClass("Counterani");
-    //     //   setTimeout(function(){
-    //     //     alert(c);
-    //     //     x.html(c);
-    //     //   },400);
-    //     //   x.on("animationend",function(){
-    //     //     x.removeClass();
-    //     //   });
-    //     // }
-    //   }
-    // }
 });

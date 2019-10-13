@@ -50,12 +50,17 @@
     color: #eef3e7;
 }
 .Article-holder h3{
-    margin-top: 40px;
+    margin: 40px 0;
+    color: #c7e997;
+}
+.Article-holder h4{
+    margin: 40px 0 0;
     color: #c7e997;
 }
 .Article-holder a{
     text-decoration: none;
     color: yellowgreen;
+    font-size: 20px;
 }
 .Article-holder p::first-letter{
     margin-left: 30px;
@@ -82,10 +87,15 @@
 
 /* Footer  */
 footer{
-    background: gray;
+    background: #05396b ;
+    color:#5cdb94 ;
     
 }
 #footer-responsiveness{
     margin: auto;
     max-width: 1600px;
+    padding: 1em;
+}
+#footer-responsiveness p{
+    text-align: center;
 }

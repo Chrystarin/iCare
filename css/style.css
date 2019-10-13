@@ -26,7 +26,10 @@ html , body {
 	background: #555; 
 }
 #Loading {
-	display:none;
+}
+
+#iCare-Content{
+    display: none;
 }
 header {
 	width: 100%;
@@ -100,6 +103,9 @@ header div > ul > li a {
 	transform: translateY(-45%);
 	z-index: 1;
 	font-size: 16px;
+	background: rgba(0, 0, 0, .8);
+	padding: 1em;
+	border-radius: 5px;
 }
 #head-responsiveness > div  > h2{
 	font-size: 1.5em;
