@@ -14,6 +14,7 @@ $(document).ready(function(){
 
       }
     }
+    // Getting the total length of the website
     var position;
     $("#scroll").click(function(){
       let scrollHeight = Math.max(
@@ -29,13 +30,14 @@ $(document).ready(function(){
         scrollTop: position
         }, 'slow');
     });
+
+
+
     // Animation for the header(Header)
     var i = 0;
-    
-
-    
     // inserting of value
     insertion(i);
+
     // add of the animation in timer
     start();
     function start(){
@@ -65,6 +67,7 @@ $(document).ready(function(){
       $("#Date").html(date[x]);
       $("#Content").html(content[x]);
       $("#head").css("background",BG[x]);
+      $("#Discover-Head").attr("data-Location", id[x])
     } 
     var c = 0;
     FactsInsertion(c);
@@ -95,7 +98,16 @@ $(document).ready(function(){
       $("#FactsContent").html(facts[x]);
     } 
 
-    counter($("#try"));
+
+    
+    // Function for the discover button
+    $(".Discover").on("click",function(){
+      var article = $(this).attr("data-Location");
+      $("#S1,#S2,#S3,#S4,#head").fadeOut();
+      $("#"+ article).fadeIn();
+
+    });
+    // counter($("#try"));
 
     // function counter(x){
     //   Num = x.html();
