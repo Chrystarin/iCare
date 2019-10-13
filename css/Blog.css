@@ -53,6 +53,10 @@
     margin-top: 40px;
     color: #c7e997;
 }
+.Article-holder a{
+    text-decoration: none;
+    color: yellowgreen;
+}
 .Article-holder p::first-letter{
     margin-left: 30px;
    
@@ -72,4 +76,16 @@
     margin: 20px 0; 
     color: white;
     line-height: 28px;
+}
+
+
+
+/* Footer  */
+footer{
+    background: gray;
+    
+}
+#footer-responsiveness{
+    margin: auto;
+    max-width: 1600px;
 }
