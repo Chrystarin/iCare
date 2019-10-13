@@ -111,8 +111,12 @@ $(document).ready(function(){
     $("#CONTRIBUTE").on("click",function(){
       $("#Blog,#Article1,#Article2,#Article3,#Article4,#Article5").fadeOut();
       $("#S1,#S2,#S3,#S4,#head").fadeIn();
-      scroll(.1);
-
+      scroll(.4 );
+    });
+    $("header div > img").on("click",function(){
+      $("#Blog,#Article1,#Article2,#Article3,#Article4,#Article5").fadeOut();
+      $("#S1,#S2,#S3,#S4,#head").fadeIn();
+      scroll(0);
     });
     // Function for the discover button
     $(".Discover").on("click",function(){

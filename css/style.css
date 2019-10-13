@@ -44,7 +44,7 @@ header {
 		height: 60px;
 	}
 	to{
-		background: rgba(4, 66, 1, 0.911);
+		background: #389583;
 		height: 50px;
 	}
 }
@@ -55,6 +55,14 @@ header > div {
 	left: 50%;
 	transform: translateX(-50%);
 	border-bottom: 1px solid white;
+}
+header div > img{
+	height: 80%;
+	position: absolute;
+	left: 1%;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
 }
 header div > ul {
 	list-style: none;

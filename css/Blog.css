@@ -26,6 +26,8 @@
 .Article-title{
     font-size: 30px;
     margin-top: 20px;
+    color: #edf5e0;
+    cursor: context-menu;
 }
 .Article-holder{
     background: #389583;
@@ -37,11 +39,19 @@
     margin-right: 10px;
 }
 .Article-info h2{
-    color: rgb(110, 110, 110);
+    color: #eef3e7;
     font-size: 1em;
+    cursor: context-menu;
 }
 .Article-holder p{
     margin-top: 40px;
+    line-height: 28px;
+    font-size: 1.2em;
+    color: #eef3e7;
+}
+.Article-holder h3{
+    margin-top: 40px;
+    color: #c7e997;
 }
 .Article-holder p::first-letter{
     margin-left: 30px;
@@ -61,4 +71,5 @@
 .Article-holder2 p{
     margin: 20px 0; 
     color: white;
+    line-height: 28px;
 }
