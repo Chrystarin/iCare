@@ -17,20 +17,25 @@ $(document).ready(function(){
     // Getting the total length of the website
     var position;
     $("#scroll").click(function(){
+      scroll(.1);
+    });
+    function scroll( x){
       let scrollHeight = Math.max(
         document.body.scrollHeight, document.documentElement.scrollHeight,
         document.body.offsetHeight, document.documentElement.offsetHeight,
         document.body.clientHeight, document.documentElement.clientHeight
       ); 
       // alert(scrollHeight);
-      position = scrollHeight * .2;
+      position = scrollHeight * x;
       $(window.opera ? 'html' : 'html, body').animate({
         scrollTop: position
         }, 'slow'); $(window.opera ? 'html' : 'html, body').animate({
         scrollTop: position
         }, 'slow');
-    });
-
+    }
+    function Start(){
+      alert()
+    }
 
 
     // Animation for the header(Header)
@@ -101,8 +106,14 @@ $(document).ready(function(){
     $("#BLOG").on("click",function(){
       $("#Blog,#Article1,#Article2,#Article3,#Article4,#Article5").fadeOut();
       $("#S1,#S2,#S3,#S4,#head").fadeIn();
+      scroll(.79);
     });
+    $("#CONTRIBUTE").on("click",function(){
+      $("#Blog,#Article1,#Article2,#Article3,#Article4,#Article5").fadeOut();
+      $("#S1,#S2,#S3,#S4,#head").fadeIn();
+      scroll(.1);
 
+    });
     // Function for the discover button
     $(".Discover").on("click",function(){
       swap($(this).attr("data-Location"));
@@ -117,9 +128,7 @@ $(document).ready(function(){
       $("#Blog,#S4,#"+ article).fadeIn();
       $(window.opera ? 'html' : 'html, body').animate({
         scrollTop: 0
-        }, 'slow'); $(window.opera ? 'html' : 'html, body').animate({
-        scrollTop: 0
-        }, 'slow');
+        }, 'slow'); 
     }
 
     
